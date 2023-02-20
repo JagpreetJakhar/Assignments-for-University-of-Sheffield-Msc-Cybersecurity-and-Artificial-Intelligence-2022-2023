@@ -1,0 +1,48 @@
+ Indicate what social engineering is:
+Social engineering is the use of psychological manipulation and influence to deceive people into divulging sensitive information or
+ performing actions that may not be in their best interest.
+
+• give illustrative examples of social engineering approaches:
+One reason social engineering is so effective is because it plays on common human tendencies, such as the desire to be helpful or the fear 
+of missing out 
+on something. For example, an email claiming to be from a bank, saying that the victim's account has been compromised 
+and asking  them to click on a link to "verify their account." The victim, feeling a sense of urgency and wanting to protect their account, 
+may click on the link without realizing that it is a phishing attack
+
+Another reason social engineering is effective is because it often relies on impersonation or deception. Cybercriminals may create fake websites
+ or social media called Pretexting:
+profiles in order to appear legitimate, or they may pretend to be someone they are not in order to gain the victim's trust.
+ This can be especially effective when the attacker is able to provide convincing details or seems to have insider knowledge.
+
+
+Baiting: This is a tactic in which a cybercriminal offers the victim something desirable, such as a prize or reward, 
+in exchange for sensitive information or access to a system.
+
+Scareware: This is a tactic in which a cybercriminal presents the victim with a fake warning, 
+such as a message claiming that their computer is infected with a virus, in order to trick them into downloading malware or paying 
+for unnecessary software.
+
+Quid pro quo: This is a tactic in which a cybercriminal offers the victim something in exchange for sensitive information or access to a system.
+ For example, an attacker might offer to fix a computer problem in exchange for the victim's login credentials.
+
+• highlight why social engineering is so effective:
+
+Overall, social engineering attacks can be highly effective because they target the human element of security rather than technical vulnerabilities..
+• explain what needs to be done or what could be done to counter it:
+
+Use technical controls such as spam filters and firewalls to block suspicious emails and prevent unauthorized 
+access to systems.
+
+Verify the identity of anyone requesting sensitive information
+
+Use strong and unique passwords: 
+
+Be cautious when clicking on links or downloading attachments: 
+
+• give an indication of how you see the future of social engineering evolving:
+
+ increasing use of social media and messaging platforms as a way to conduct 
+social engineering attacks. 
+ the use of artificial intelligence and machine learning to automate and scale 
+social engineering attacks to create more sophisticated and targeted attacks,
+ or to automate the process of sending large numbers of phishing emails or messages.
