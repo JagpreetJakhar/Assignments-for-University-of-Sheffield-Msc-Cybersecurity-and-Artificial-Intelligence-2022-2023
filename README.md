@@ -6,6 +6,7 @@ A) First Semester:
     3) Machine Learning and Adaptive Intelligence (MLAI)
     4) Text Processing (TP)
 B) Second Semester:
+
     1) Scalable Machine Learning (SML)
     2) Development of Secure Software (DSS)
     3) Security of Control and embedded systems (SCAES)
