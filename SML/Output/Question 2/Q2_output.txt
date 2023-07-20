@@ -1,0 +1,66 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+23/05/03 06:06:02 INFO SparkContext: Running Spark version 3.3.1
+23/05/03 06:06:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/05/03 06:06:02 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+23/05/03 06:06:02 INFO ResourceUtils: ==============================================================
+23/05/03 06:06:02 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/05/03 06:06:02 INFO ResourceUtils: ==============================================================
+23/05/03 06:06:02 INFO SparkContext: Submitted application: COM6012 Spark Intro
+23/05/03 06:06:02 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/05/03 06:06:02 INFO ResourceProfile: Limiting resource is cpu
+23/05/03 06:06:02 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/05/03 06:06:02 INFO SecurityManager: Changing view acls to: acq22jj
+23/05/03 06:06:02 INFO SecurityManager: Changing modify acls to: acq22jj
+23/05/03 06:06:02 INFO SecurityManager: Changing view acls groups to: 
+23/05/03 06:06:02 INFO SecurityManager: Changing modify acls groups to: 
+23/05/03 06:06:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acq22jj); groups with view permissions: Set(); users  with modify permissions: Set(acq22jj); groups with modify permissions: Set()
+23/05/03 06:06:03 INFO Utils: Successfully started service 'sparkDriver' on port 40522.
+23/05/03 06:06:03 INFO SparkEnv: Registering MapOutputTracker
+23/05/03 06:06:03 INFO SparkEnv: Registering BlockManagerMaster
+23/05/03 06:06:03 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/05/03 06:06:03 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/05/03 06:06:03 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/05/03 06:06:03 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acq22jj/blockmgr-536163e9-4e7c-42eb-a96d-0d5ee7114174
+23/05/03 06:06:03 INFO MemoryStore: MemoryStore started with capacity 3.6 GiB
+23/05/03 06:06:03 INFO SparkEnv: Registering OutputCommitCoordinator
+23/05/03 06:06:03 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/05/03 06:06:04 INFO Executor: Starting executor ID driver on host sharc-node175.shef.ac.uk
+23/05/03 06:06:04 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/05/03 06:06:04 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42263.
+23/05/03 06:06:04 INFO NettyBlockTransferService: Server created on sharc-node175.shef.ac.uk:42263
+23/05/03 06:06:04 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/05/03 06:06:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node175.shef.ac.uk, 42263, None)
+23/05/03 06:06:04 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node175.shef.ac.uk:42263 with 3.6 GiB RAM, BlockManagerId(driver, sharc-node175.shef.ac.uk, 42263, None)
+23/05/03 06:06:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node175.shef.ac.uk, 42263, None)
+23/05/03 06:06:04 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node175.shef.ac.uk, 42263, None)
+23/05/03 06:06:41 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+23/05/03 06:06:41 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.ForeignLinkerBLAS
+23/05/03 06:06:42 WARN InstanceBuilder$NativeLAPACK: Failed to load implementation from:dev.ludovic.netlib.lapack.JNILAPACK
+
+RMSE = 0.247971 
+
+
+ Model Coefficients
+[0.005057972508974127,-0.0010617099596318925,-0.0006420225090499234,-0.0026403332535199784,0.005425916695717338,-0.001313778783670871,-0.0029290452708882835,0.0001915070605640519,0.004618634937963245,-0.0009230232983699072,0.012783975626582742,0.012563324980146204,-0.0016204448366736884,0.000436841293493627,0.016037417431419537,0.0016248072291138468,-0.0045462474355981684,-0.008417998933085882,-0.008790698021585986,9.496731660541077e-05,-0.008197231152832416,-0.011081436568077595,0.004965862070833389,0.00011085417577803178,-0.008991423598088069,0.006285034777604171,-0.008742035138219556,0.0053044556858856335,0.003153203994716013,0.0004638436311752013,0.000545422107288944,-0.00253979465233204,0.006198501107485032,0.00915966427710716,-0.010495646492162418,-0.004752921567334665,0.008419852891907506,-0.10159198170614923,0.008101109235657095,-4.0094361262874094e-05,0.009728952192964114,-0.007438649892752686,-0.01362552713963212,0.0067516295936443,0.012350295405749667,0.0019428325977281563,-0.004456554586195711,-0.004381561898551594,-0.007128238628384552,0.03289832064251561,-0.015320659962800316,0.0025618030172044415,0.0024680192192399796]
+RMSE Linear Regression_L1 = 0.255
+Coefficients:  [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.016581673766405677,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.008097874053047245,0.0,0.0,0.0]
+RMSE Linear Regression_L2 = 0.254
+Coefficients:  [0.0034733119104192675,-0.0005571401414144276,9.596406020987964e-06,-0.0011453077352969316,0.004110841256549953,-0.00030336597713209355,-0.0013221623460423536,0.0009239355945296598,0.004747531529637773,-0.00042089444748230224,0.006773420329904437,0.006413630721841841,-0.0028330404087949894,-0.0014412311198636514,0.00983210319899552,0.00013158632003004947,-0.006203676942293502,-0.007257293845590484,-0.008144170252672719,-0.0010084030397925286,-0.007982861182917411,-0.010114330950503169,0.0036356010048807586,-0.0010145786298292228,-0.010425552703212122,0.005226908607911314,-0.0122075577134902,0.00630849879525538,0.0012400383877276704,-0.0008250009094772366,-0.0009497519591859382,-0.0022405371452436616,0.0025115319920377033,0.004696154666792484,-0.007101994528436635,-0.003666895012212548,0.004794042021631531,-0.07246495078392932,0.004304762750661181,-0.0006220118130317035,0.005333621862785282,-0.005629329950126414,-0.009406015920729918,0.003998989613299877,0.007706166687900909,0.0008898011526206624,-0.005127437527660577,-0.008306588548390198,-0.013503811362767692,0.018749847606745494,-0.008787600812341086,0.0020723090983900626,0.0011623353875302041]
+Logistic Regression With L1 Regularisation Accuracy : 0.947
+Coefficients:  [-0.14120436  0.1239572 ]
+Logistic Regression With L1 Regularisation Accuracy : 0.947
+Coefficients:  [ 4.95267003e-02 -2.25228847e-02 -8.96585405e-03 -2.29570667e-02
+  5.58986978e-02 -1.50781592e-02 -2.85202832e-02 -7.25037306e-03
+  5.60568034e-02 -2.28319423e-02  1.09476740e-01  9.96401277e-02
+ -5.63098452e-02 -1.59624798e-02  1.54702722e-01 -6.41793012e-05
+ -1.46184979e-01 -1.44769522e-01 -1.59839855e-01 -2.02103170e-02
+ -1.64154661e-01 -1.40073111e-01  6.50261155e-02 -2.08128076e-02
+ -2.41216528e-01  8.03814357e-02 -2.31890297e-01  8.55956660e-02
+ -8.67344720e-03 -2.68118002e-02 -1.61673533e-02 -2.76434771e-02
+  4.60639531e-02  7.72018581e-02 -9.98958735e-02 -4.64551458e-02
+  7.56554395e-02 -9.18444886e-01  6.46487548e-02 -1.24544132e-02
+  8.38019927e-02 -9.38421491e-02 -1.77690011e-01  5.93318938e-02
+  1.11564796e-01  9.44844595e-03 -9.05495091e-02 -1.31380627e-01
+ -2.13250292e-01  2.99771096e-01 -1.37917815e-01  3.57173810e-02
+  1.95302277e-02]

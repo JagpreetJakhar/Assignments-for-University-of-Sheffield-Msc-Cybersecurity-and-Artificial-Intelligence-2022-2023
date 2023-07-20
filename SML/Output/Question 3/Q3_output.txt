@@ -1,0 +1,220 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+23/05/05 08:58:11 INFO SparkContext: Running Spark version 3.3.1
+23/05/05 08:58:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/05/05 08:58:11 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+23/05/05 08:58:11 INFO ResourceUtils: ==============================================================
+23/05/05 08:58:11 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/05/05 08:58:11 INFO ResourceUtils: ==============================================================
+23/05/05 08:58:11 INFO SparkContext: Submitted application: COM6012 Assignment
+23/05/05 08:58:11 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/05/05 08:58:11 INFO ResourceProfile: Limiting resource is cpu
+23/05/05 08:58:11 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/05/05 08:58:12 INFO SecurityManager: Changing view acls to: acq22jj
+23/05/05 08:58:12 INFO SecurityManager: Changing modify acls to: acq22jj
+23/05/05 08:58:12 INFO SecurityManager: Changing view acls groups to: 
+23/05/05 08:58:12 INFO SecurityManager: Changing modify acls groups to: 
+23/05/05 08:58:12 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acq22jj); groups with view permissions: Set(); users  with modify permissions: Set(acq22jj); groups with modify permissions: Set()
+23/05/05 08:58:12 INFO Utils: Successfully started service 'sparkDriver' on port 40425.
+23/05/05 08:58:12 INFO SparkEnv: Registering MapOutputTracker
+23/05/05 08:58:12 INFO SparkEnv: Registering BlockManagerMaster
+23/05/05 08:58:12 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/05/05 08:58:12 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/05/05 08:58:12 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/05/05 08:58:12 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acq22jj/blockmgr-fdec88b7-c504-401a-8e68-ad9ea62e4140
+23/05/05 08:58:12 INFO MemoryStore: MemoryStore started with capacity 31.8 GiB
+23/05/05 08:58:12 INFO SparkEnv: Registering OutputCommitCoordinator
+23/05/05 08:58:13 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/05/05 08:58:13 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+23/05/05 08:58:13 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+23/05/05 08:58:13 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+23/05/05 08:58:13 INFO Utils: Successfully started service 'SparkUI' on port 4044.
+23/05/05 08:58:13 INFO Executor: Starting executor ID driver on host sharc-node175.shef.ac.uk
+23/05/05 08:58:13 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/05/05 08:58:13 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44522.
+23/05/05 08:58:13 INFO NettyBlockTransferService: Server created on sharc-node175.shef.ac.uk:44522
+23/05/05 08:58:13 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/05/05 08:58:13 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node175.shef.ac.uk, 44522, None)
+23/05/05 08:58:13 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node175.shef.ac.uk:44522 with 31.8 GiB RAM, BlockManagerId(driver, sharc-node175.shef.ac.uk, 44522, None)
+23/05/05 08:58:13 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node175.shef.ac.uk, 44522, None)
+23/05/05 08:58:13 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node175.shef.ac.uk, 44522, None)
+root
+ |-- userId: integer (nullable = true)
+ |-- movieId: integer (nullable = true)
+ |-- rating: double (nullable = true)
+ |-- timestamp: integer (nullable = true)
+
+Root-mean-square error for size 40 ALS_1 = 0.8031813339236481
+Root-mean-square error for size 60 ALS_1 = 0.7821724266739104
+Root-mean-square error for size 80 ALS_1= 0.7963648832738655
+Root-mean-square error for size 40 ALS_2 = 0.8009333019158624
+Root-mean-square error for size 60 ALS_2 = 0.7796738326803554
+Root-mean-square error for size 80 ALS_2= 0.7949130965849656
+
+
+   Model Metric        Split     Score
+0   ALS1   rmse  Split 40:60  0.803181
+1   ALS1    mse  Split 40:60  0.645100
+2   ALS1    mae  Split 40:60  0.615886
+3   ALS1   rmse  Split 60:40  0.782172
+4   ALS1    mse  Split 60:40  0.611794
+5   ALS1    mae  Split 60:40  0.594644
+6   ALS1   rmse  Split 80:20  0.796365
+7   ALS1    mse  Split 80:20  0.634197
+8   ALS1    mae  Split 80:20  0.600149
+9   ALS2   rmse  Split 40:60  0.800933
+10  ALS2    mse  Split 40:60  0.641494
+11  ALS2    mae  Split 40:60  0.611788
+12  ALS2   rmse  Split 60:40  0.779674
+13  ALS2    mse  Split 60:40  0.607891
+14  ALS2    mae  Split 60:40  0.591294
+15  ALS2   rmse  Split 80:20  0.794913
+16  ALS2    mse  Split 80:20  0.631887
+17  ALS2    mae  Split 80:20  0.597897
+
+
+Top five largest clusters for split 1:
++----------+-----+
+|prediction|count|
++----------+-----+
+|         9| 4698|
+|         3| 4175|
+|        12| 3847|
+|        21| 3750|
+|         2| 3711|
++----------+-----+
+
+Top five largest clusters for split 2:
++----------+-----+
+|prediction|count|
++----------+-----+
+|         7| 6841|
+|         2| 6748|
+|        24| 5698|
+|        20| 5659|
+|         5| 5351|
++----------+-----+
+
+Top five largest clusters for split 3:
++----------+-----+
+|prediction|count|
++----------+-----+
+|         6| 7977|
+|         7| 7312|
+|        14| 7281|
+|        13| 6970|
+|        22| 6759|
++----------+-----+
+
+   Split 1 Prediction  Split 1 Count  Split 2 Prediction  Split 2 Count   
+0                   9           4698                   7           6841  \
+1                   3           4175                   2           6748   
+2                  12           3847                  24           5698   
+3                  21           3750                  20           5659   
+4                   2           3711                   5           5351   
+
+   Split 3 Prediction  Split 3 Count  
+0                   6           7977  
+1                   7           7312  
+2                  14           7281  
+3                  13           6970  
+4                  22           6759  
++----------+----+-------+
+|prediction|size|  split|
++----------+----+-------+
+|         2|3711|Split 1|
+|         3|4175|Split 1|
+|         9|4698|Split 1|
+|        12|3847|Split 1|
+|        21|3750|Split 1|
+|         2|6748|Split 2|
+|         5|5351|Split 2|
+|         7|6841|Split 2|
+|        20|5659|Split 2|
+|        24|5698|Split 2|
+|         6|7977|Split 3|
+|         7|7312|Split 3|
+|        13|6970|Split 3|
+|        14|7281|Split 3|
+|        22|6759|Split 3|
++----------+----+-------+
+
++-------+------------------+
+|movieId|avg_rating        |
++-------+------------------+
+|471    |3.718104495747266 |
+|148    |3.111111111111111 |
+|496    |3.6923076923076925|
+|243    |1.8461538461538463|
+|31     |3.073369565217391 |
++-------+------------------+
+only showing top 5 rows
+
++--------------------+-----+
+|              genres|count|
++--------------------+-----+
+|               Drama|  281|
+|         Documentary|   69|
+|       Drama|Romance|   65|
+|              Comedy|   65|
+|        Comedy|Drama|   63|
+|Comedy|Drama|Romance|   41|
+|           Drama|War|   39|
+|      Comedy|Romance|   35|
+|         Crime|Drama|   28|
+|Crime|Drama|Thriller|   15|
++--------------------+-----+
+
++--------------------+-----+
+|              genres|count|
++--------------------+-----+
+|               Drama|  125|
+|         Documentary|   55|
+|              Comedy|   44|
+|           Drama|War|   33|
+|        Comedy|Drama|   27|
+|       Drama|Romance|   22|
+|Comedy|Drama|Romance|   22|
+|         Crime|Drama|   21|
+|      Comedy|Romance|   18|
+|Crime|Drama|Thriller|   12|
++--------------------+-----+
+
++--------------------+-----+
+|              genres|count|
++--------------------+-----+
+|               Drama|  609|
+|         Documentary|  240|
+|       Drama|Romance|  160|
+|        Comedy|Drama|  134|
+|              Comedy|  128|
+|           Drama|War|   86|
+|         Crime|Drama|   66|
+|Comedy|Drama|Romance|   64|
+|      Comedy|Romance|   52|
+|      Drama|Thriller|   44|
++--------------------+-----+
+
+         Split 1 Genres  Split 1 Count        Split 2 Genres  Split 2 Count   
+0                 Drama            281                 Drama            125  \
+1           Documentary             69           Documentary             55   
+2         Drama|Romance             65                Comedy             44   
+3                Comedy             65             Drama|War             33   
+4          Comedy|Drama             63          Comedy|Drama             27   
+5  Comedy|Drama|Romance             41  Comedy|Drama|Romance             22   
+6             Drama|War             39         Drama|Romance             22   
+7        Comedy|Romance             35           Crime|Drama             21   
+8           Crime|Drama             28        Comedy|Romance             18   
+9  Crime|Drama|Thriller             15  Crime|Drama|Thriller             12   
+
+         Split 3 Genres  Split 3 Count  
+0                 Drama            609  
+1           Documentary            240  
+2         Drama|Romance            160  
+3          Comedy|Drama            134  
+4                Comedy            128  
+5             Drama|War             86  
+6           Crime|Drama             66  
+7  Comedy|Drama|Romance             64  
+8        Comedy|Romance             52  
+9        Drama|Thriller             44  

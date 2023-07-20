@@ -1,0 +1,48 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+23/05/04 03:05:26 INFO SparkContext: Running Spark version 3.3.1
+23/05/04 03:05:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/05/04 03:05:26 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+23/05/04 03:05:26 INFO ResourceUtils: ==============================================================
+23/05/04 03:05:26 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/05/04 03:05:26 INFO ResourceUtils: ==============================================================
+23/05/04 03:05:26 INFO SparkContext: Submitted application: COM6012 Assignment
+23/05/04 03:05:26 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/05/04 03:05:26 INFO ResourceProfile: Limiting resource is cpu
+23/05/04 03:05:26 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/05/04 03:05:26 INFO SecurityManager: Changing view acls to: acq22jj
+23/05/04 03:05:26 INFO SecurityManager: Changing modify acls to: acq22jj
+23/05/04 03:05:26 INFO SecurityManager: Changing view acls groups to: 
+23/05/04 03:05:26 INFO SecurityManager: Changing modify acls groups to: 
+23/05/04 03:05:26 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acq22jj); groups with view permissions: Set(); users  with modify permissions: Set(acq22jj); groups with modify permissions: Set()
+23/05/04 03:05:26 INFO Utils: Successfully started service 'sparkDriver' on port 33442.
+23/05/04 03:05:26 INFO SparkEnv: Registering MapOutputTracker
+23/05/04 03:05:26 INFO SparkEnv: Registering BlockManagerMaster
+23/05/04 03:05:26 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/05/04 03:05:26 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/05/04 03:05:26 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/05/04 03:05:26 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acq22jj/blockmgr-d9f9a789-4764-4952-8cab-be8a5aca8ad0
+23/05/04 03:05:26 INFO MemoryStore: MemoryStore started with capacity 10.5 GiB
+23/05/04 03:05:27 INFO SparkEnv: Registering OutputCommitCoordinator
+23/05/04 03:05:27 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/05/04 03:05:27 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+23/05/04 03:05:27 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+23/05/04 03:05:27 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+23/05/04 03:05:27 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+23/05/04 03:05:27 INFO Utils: Successfully started service 'SparkUI' on port 4045.
+23/05/04 03:05:28 INFO Executor: Starting executor ID driver on host sharc-node173.shef.ac.uk
+23/05/04 03:05:28 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/05/04 03:05:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33340.
+23/05/04 03:05:28 INFO NettyBlockTransferService: Server created on sharc-node173.shef.ac.uk:33340
+23/05/04 03:05:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/05/04 03:05:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 33340, None)
+23/05/04 03:05:28 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node173.shef.ac.uk:33340 with 10.5 GiB RAM, BlockManagerId(driver, sharc-node173.shef.ac.uk, 33340, None)
+23/05/04 03:05:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 33340, None)
+23/05/04 03:05:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node173.shef.ac.uk, 33340, None)
+First 10 entries of the 2 PCs:
+ PC1:(-4.187373864219449, -13.053580670832174, -13.402833398556252, -9.518465693501682, -11.36210605186559, -17.27502451559686, -9.06893012471305, -14.53129493155118, -14.172433999569217, -11.987440697249893, -11.108393045365975)
+ PC2: (0.646185617325472, 0.38433519586369336, 0.646427415343431, 0.7587197949636434, 1.020098476527301, 0.6219632160876928, 0.85114381260986, 0.3843439207450862, 1.023310958908378, 0.5306143092652766, 1.06550011431261)
+Eigenvalues: [0.00377015 0.00636943]
+Explained_variance:  [0.05203481 0.01127954]
+Retained_variance [0.82184862 0.17815138]
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.

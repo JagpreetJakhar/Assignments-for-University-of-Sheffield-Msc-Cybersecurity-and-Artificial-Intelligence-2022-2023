@@ -1,0 +1,89 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+23/05/01 23:45:20 INFO SparkContext: Running Spark version 3.3.1
+23/05/01 23:45:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/05/01 23:45:20 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+23/05/01 23:45:20 INFO ResourceUtils: ==============================================================
+23/05/01 23:45:20 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/05/01 23:45:20 INFO ResourceUtils: ==============================================================
+23/05/01 23:45:20 INFO SparkContext: Submitted application: COM6012 Assignment
+23/05/01 23:45:20 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/05/01 23:45:20 INFO ResourceProfile: Limiting resource is cpu
+23/05/01 23:45:20 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/05/01 23:45:20 INFO SecurityManager: Changing view acls to: acq22jj
+23/05/01 23:45:20 INFO SecurityManager: Changing modify acls to: acq22jj
+23/05/01 23:45:20 INFO SecurityManager: Changing view acls groups to: 
+23/05/01 23:45:20 INFO SecurityManager: Changing modify acls groups to: 
+23/05/01 23:45:20 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acq22jj); groups with view permissions: Set(); users  with modify permissions: Set(acq22jj); groups with modify permissions: Set()
+23/05/01 23:45:20 INFO Utils: Successfully started service 'sparkDriver' on port 44573.
+23/05/01 23:45:21 INFO SparkEnv: Registering MapOutputTracker
+23/05/01 23:45:21 INFO SparkEnv: Registering BlockManagerMaster
+23/05/01 23:45:21 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/05/01 23:45:21 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/05/01 23:45:21 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/05/01 23:45:21 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acq22jj/blockmgr-46de2e8f-f3e6-4754-b029-4380c36f27e7
+23/05/01 23:45:21 INFO MemoryStore: MemoryStore started with capacity 408.9 MiB
+23/05/01 23:45:22 INFO SparkEnv: Registering OutputCommitCoordinator
+23/05/01 23:45:22 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/05/01 23:45:22 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+23/05/01 23:45:22 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+23/05/01 23:45:22 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+23/05/01 23:45:22 INFO Utils: Successfully started service 'SparkUI' on port 4044.
+23/05/01 23:45:23 INFO Executor: Starting executor ID driver on host sharc-node174.shef.ac.uk
+23/05/01 23:45:23 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/05/01 23:45:23 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41735.
+23/05/01 23:45:23 INFO NettyBlockTransferService: Server created on sharc-node174.shef.ac.uk:41735
+23/05/01 23:45:23 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/05/01 23:45:23 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node174.shef.ac.uk, 41735, None)
+23/05/01 23:45:23 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node174.shef.ac.uk:41735 with 408.9 MiB RAM, BlockManagerId(driver, sharc-node174.shef.ac.uk, 41735, None)
+23/05/01 23:45:23 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node174.shef.ac.uk, 41735, None)
+23/05/01 23:45:23 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node174.shef.ac.uk, 41735, None)
+/home/acq22jj/.conda/envs/myspark/lib/python3.9/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/column.py:419: FutureWarning: A column as 'key' in getItem is deprecated as of Spark 3.0, and will not be supported in the future release. Use `column[key]` or `column.key` syntax instead.
+Total Number of requests from Germany:21345
+Total Number of requests from Canada : 58290
+Total Number of requests from Singapore : 1057
+Number of unique hosts from Germany: 1138
+Number of unique hosts from Candada : 2970
+Number of unique hosts from Singapore: 78
++------------------------------+-----+
+|Germany                       |count|
++------------------------------+-----+
+|host62.ascend.interop.eunet.de|832  |
+|aibn32.astro.uni-bonn.de      |642  |
+|ns.scn.de                     |523  |
+|www.rrz.uni-koeln.de          |423  |
+|ztivax.zfe.siemens.de         |387  |
+|sun7.lrz-muenchen.de          |280  |
+|relay.ccs.muc.debis.de        |275  |
+|dws.urz.uni-magdeburg.de      |244  |
+|relay.urz.uni-heidelberg.de   |239  |
++------------------------------+-----+
+
++--------------------------+-----+
+|Canada                    |count|
++--------------------------+-----+
+|ottgate2.bnr.ca           |1718 |
+|freenet.edmonton.ab.ca    |782  |
+|bianca.osc.on.ca          |511  |
+|alize.ere.umontreal.ca    |479  |
+|pcrb.ccrs.emr.ca          |461  |
+|srv1.freenet.calgary.ab.ca|362  |
+|ccn.cs.dal.ca             |351  |
+|oncomdis.on.ca            |304  |
+|cobain.arcs.bcit.bc.ca    |289  |
++--------------------------+-----+
+
++-------------------------+-----+
+|Singapore                |count|
++-------------------------+-----+
+|merlion.singnet.com.sg   |308  |
+|sunsite.nus.sg           |40   |
+|ts900-1314.singnet.com.sg|30   |
+|ssc25.iscs.nus.sg        |30   |
+|scctn02.sp.ac.sg         |25   |
+|ts900-1305.singnet.com.sg|25   |
+|ts900-406.singnet.com.sg |25   |
+|ts900-402.singnet.com.sg |24   |
+|einstein.technet.sg      |23   |
++-------------------------+-----+
+
